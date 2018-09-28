@@ -5420,7 +5420,7 @@ ul.uk-nav-sub {
   box-sizing: border-box;
   width: 270px;
   padding: 20px 20px;
-  background: #222;
+  background: #111;
   /* 3 */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -12262,4 +12262,10 @@ iframe.uk-cover {
 }
 .uk-panel.uk-panel-header {
     margin-top: 40px;
+}
+.uk-offcanvas .uk-panel {
+    margin: 20px;
+    color: #777;
+    font-size: 14px;
+    line-height: 20px;
 }
