@@ -83,7 +83,7 @@
         <div id="tm-bottom" class="tm-bottom uk-block <?= $params['bottom_style'] ?>">
             <div class="uk-container uk-container-center">
 
-                <section class="uk-grid-match" data-uk-grid data-uk-margin>
+                <section class="uk-grid-match uk-child-width-expand@s" data-uk-grid data-uk-margin>
                     <?= $view->position('bottom', 'position-grid.php') ?>
                 </section>
 
