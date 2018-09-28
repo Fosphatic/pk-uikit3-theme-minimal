@@ -1,0 +1,73 @@
+//
+// Component: Icon
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@icon-small-font-size:                          18px;
+@icon-medium-font-size:                         20px;
+@icon-large-font-size:                          22px;
+
+@icon-hover-color:                              @global-muted-color;
+@icon-hover-hover-color:                        @global-dark-color;
+
+@icon-button-width:                             48px;
+@icon-button-height:                            @icon-button-width;
+@icon-button-background:                        transparent;
+@icon-button-font-size:                         20px;
+@icon-button-color:                             @global-muted-color;
+
+@icon-button-hover-background:                  #000;
+@icon-button-hover-color:                       @global-contrast-color;
+
+@icon-button-active-background:                 #000;
+@icon-button-active-color:                      @global-contrast-color;
+
+//
+// New
+//
+
+@icon-button-border:                            lighten(@icon-button-color, 10%);
+
+
+// Modifier: `uk-icon-hover`
+// ========================================================================
+
+.hook-icon-hover() {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.hook-icon-hover-hover() {}
+
+
+// Modifier: `uk-icon-button`
+// ========================================================================
+
+.hook-icon-button() {
+    border: 1px solid @icon-button-border;
+    line-height: (@icon-button-height - 2);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+// Hover
+.hook-icon-button-hover() { border-color: #000; }
+
+// Active
+.hook-icon-button-active() { border-color: #000; }
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-icon-misc() {
+
+    .uk-icon-small,
+    .uk-icon-medium,
+    .uk-icon-large { line-height: @global-line-height; }
+
+}

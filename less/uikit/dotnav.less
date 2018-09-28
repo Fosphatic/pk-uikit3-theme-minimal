@@ -1,0 +1,72 @@
+//
+// Component: Dotnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dotnav-margin-horizontal:                      8px;
+@dotnav-width:                                  10px;
+@dotnav-background:                             @global-border;
+
+@dotnav-hover-background:                       darken(@dotnav-background, 50%);
+@dotnav-onclick-background:                     darken(@dotnav-background, 70%);
+@dotnav-active-background:                      rgba(0,0,0,0);
+
+@dotnav-contrast-background:                    fade(@global-contrast-color, 50%);
+@dotnav-contrast-hover-background:              fade(@global-contrast-color, 80%);
+@dotnav-contrast-onclick-background:            fade(@global-contrast-color, 60%);
+@dotnav-contrast-active-background:             rgba(0,0,0,0);
+
+//
+// New
+//
+
+@dotnav-border-width:                           1px;
+@dotnav-border:                                 rgba(0,0,0,0);
+@dotnav-hover-border:                           rgba(0,0,0,0);
+@dotnav-onclick-border:                         rgba(0,0,0,0);
+@dotnav-active-border:                          darken(@global-border, 70%);
+
+@dotnav-contrast-border:                        rgba(0,0,0,0);
+@dotnav-contrast-hover-border:                  rgba(0,0,0,0);
+@dotnav-contrast-onclick-border:                rgba(0,0,0,0);
+@dotnav-contrast-active-border:                 @global-contrast-color;
+
+
+// Component
+// ========================================================================
+
+.hook-dotnav-item() {
+    border: @dotnav-border-width solid @dotnav-border;
+    -webkit-transition: all 0.27s ease-out;
+    transition: all 0.27s ease-out;
+}
+
+.hook-dotnav-item-hover() { border-color: @dotnav-hover-border; }
+
+.hook-dotnav-item-onclick() {
+    border-color:  @dotnav-onclick-border;
+}
+
+.hook-dotnav-item-active() {
+    border-color: @dotnav-active-border;
+    -webkit-transform: scale(1.3);
+    transfrom: scale(1.3);
+}
+
+.hook-dotnav-contrast-item() { border-color: @dotnav-contrast-border; }
+
+.hook-dotnav-contrast-item-hover() { border-color: @dotnav-contrast-hover-border; }
+
+.hook-dotnav-contrast-item-onclick() { border-color: @dotnav-contrast-onclick-border; }
+
+.hook-dotnav-contrast-item-active() { border-color: @dotnav-contrast-active-border; }
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-dotnav-misc() {}

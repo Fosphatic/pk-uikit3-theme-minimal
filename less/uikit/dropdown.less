@@ -1,0 +1,61 @@
+//
+// Component: Dropdown
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dropdown-z-index:                              @global-z-index + 20;
+@dropdown-padding:                              30px;
+@dropdown-background:                           @global-background;
+@dropdown-color:                                @global-color;
+@dropdown-divider-border:                       @global-border;
+
+@dropdown-small-padding:                        @dropdown-padding;
+
+@dropdown-navbar-margin:                        0;
+@dropdown-navbar-background:                    @global-background;
+@dropdown-navbar-color:                         @global-color;
+@dropdown-navbar-animation:                     uk-fade;
+
+
+// Component
+// ========================================================================
+
+.hook-dropdown() {}
+
+
+// Modifier: `uk-dropdown-navbar`
+// ========================================================================
+
+.hook-dropdown-navbar() {
+    margin-left: -30px !important;
+    padding: 0 @dropdown-padding @dropdown-padding @dropdown-padding;
+}
+
+
+// Sub-object: `uk-dropdown-overlay`
+// ========================================================================
+
+.hook-dropdown-overlay() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-dropdown-misc() {
+
+    /* Nav in dropdown
+     ========================================================================== */
+
+    .uk-dropdown .uk-nav { margin: 0 -20px; }
+
+
+    /* Content in dropdown
+     ========================================================================== */
+
+    .uk-dropdown .uk-panel { font-size: 13px; }
+
+}

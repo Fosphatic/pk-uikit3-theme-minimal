@@ -1,0 +1,124 @@
+//
+// Component: Overlay
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@overlay-panel-color:                           @global-contrast-color;
+
+@overlay-panel-background:                      rgba(0,0,0, 0.6);
+
+@overlay-icon:                                  "";
+@overlay-icon-size:                             34px;
+@overlay-icon-color:                            @global-contrast-color;
+
+//
+// New
+//
+
+@overlay-button-border:                         @global-contrast-color;
+@overlay-button-color:                          @global-contrast-color;
+
+@overlay-button-hover-background:               @global-contrast-color;
+@overlay-button-hover-border:                   @global-contrast-color;
+@overlay-button-hover-color:                    @global-dark-color;
+
+@overlay-button-primary-background:             @global-contrast-color;
+@overlay-button-primary-color:                  @global-dark-color;
+
+@overlay-button-primary-hover-background:       darken(@overlay-button-primary-background, 47%);
+@overlay-button-primary-hover-color:            @global-contrast-color;
+
+@overlay-icon-button-border:                    @global-contrast-color;
+@overlay-icon-button-color:                     @overlay-icon-button-border;
+
+@overlay-icon-button-hover-background:          @global-contrast-color;
+@overlay-icon-button-hover-border:              @overlay-icon-button-hover-background;
+@overlay-icon-button-hover-color:               @global-dark-color;
+
+
+// Sub-object `uk-overlay-panel`
+// ========================================================================
+
+.hook-overlay-panel() {
+
+    // Button
+    .uk-button:not(.uk-button-primary):not(.uk-button-success):not(.uk-button-danger) {
+
+        border-color: @overlay-button-border;
+        color: @overlay-button-color;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: @overlay-button-hover-background;
+            border-color: @overlay-button-hover-border;
+            color: @overlay-button-hover-color;
+        }
+
+    }
+
+    // Button Primary
+
+    .uk-button-primary {
+        background: @overlay-button-primary-background;
+        color: @overlay-button-primary-color;
+
+        &:hover,
+        &:active,
+        &.uk-active,
+        &:focus {
+            background-color: @overlay-button-primary-hover-background;
+            color: @overlay-button-primary-hover-color;
+        }
+    }
+
+    // Icon Button
+    .uk-icon-button {
+
+        border-color: @overlay-icon-button-border;
+        color: @overlay-icon-button-color;
+
+        &:hover,
+        &:active,
+        &.uk-active,
+        &:focus {
+            background-color: @overlay-icon-button-hover-background;
+            border-color: @overlay-icon-button-hover-border;
+            color:  @overlay-icon-button-hover-color;
+        }
+
+    }
+
+}
+
+
+// Sub-object `uk-overlay-background`
+// ========================================================================
+
+.hook-overlay-background() {}
+
+
+// Sub-object `uk-overlay-image`
+// ========================================================================
+
+.hook-overlay-image() {}
+
+
+// Sub-object `uk-overlay-icon`
+// ========================================================================
+
+.hook-overlay-icon() {
+    height: 34px;
+    width: 34px;
+    background: url("@{global-image-path}/overlay-plus.svg") 0 0 no-repeat;
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-overlay-misc() {}

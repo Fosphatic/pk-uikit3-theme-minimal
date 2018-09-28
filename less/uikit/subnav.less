@@ -1,0 +1,75 @@
+//
+// Component: Subnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@subnav-margin-horizontal:                      20px;
+@subnav-color:                                  @global-muted-color;
+@subnav-hover-color:                            @global-dark-color;
+@subnav-active-color:                           @global-dark-color;
+
+@subnav-line-border:                            @global-border;
+
+@subnav-pill-hover-background:                  @global-default-hover-background;
+@subnav-pill-hover-color:                       @global-color;
+@subnav-pill-active-background:                 #000;
+@subnav-pill-active-color:                      @global-contrast-color;
+
+@subnav-disabled-color:                         @global-muted-color;
+
+
+// Component
+// ========================================================================
+
+.hook-subnav() {
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.hook-subnav-hover() { border-bottom-color: @global-dark-color; }
+
+.hook-subnav-active() { border-bottom-color: @global-dark-color; }
+
+
+// Modifier: `uk-subnav-line`
+// ========================================================================
+
+.hook-subnav-line-divider() {}
+
+
+// Modifier: `uk-subnav-pill`
+// ========================================================================
+
+.hook-subnav-pill() { border-bottom: none; }
+
+.hook-subnav-pill-hover() {}
+
+.hook-subnav-pill-active() {}
+
+
+// Disabled state
+// ========================================================================
+
+.hook-subnav-disabled() { border-bottom-color: transparent; }
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-subnav-misc() {
+
+    .uk-subnav { font-size: 13px; }
+
+
+    /*
+     * Reset border bottom
+     */
+
+    .uk-subnav.uk-subnav-line > * > * { border-bottom: none; }
+
+}

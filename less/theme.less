@@ -1,0 +1,104 @@
+@import "uikit/uikit.less";
+
+@icon-font-path: "../../../../app/assets/uikit/fonts";
+@global-image-path: '../less/uikit/images';
+
+/* ========================================================================
+   Theme
+ ========================================================================== */
+
+@theme-container-mini:                               600px;
+@theme-container-small:                              850px;
+
+@theme-article-border-padding:                       50px;
+@theme-article-border-padding-large:                 80px;
+
+@theme-margin-top:                                   30px;
+@theme-large-margin-top:                             50px;
+
+
+// Theme Variables
+// ==========================================================================
+
+
+[v-cloak] { display: none; }
+
+/*
+ * Force vertical scrollbar
+ */
+
+html { overflow-y: scroll; }
+
+
+/* Navbar
+ ========================================================================== */
+
+.tm-navbar { padding: 20px 0 40px 0; }
+
+
+/* Tablet and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    .tm-navbar { padding: 50px 0; }
+
+}
+
+/* Large screens and bigger */
+@media (min-width: @breakpoint-xlarge) {
+
+    .tm-navbar { padding: 80px 0; }
+
+}
+
+
+/* Blocks
+ ========================================================================== */
+
+.tm-navbar + .uk-block-default { padding-top: 0; }
+
+/*
+ * Footer
+ */
+
+/* Tablet and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    .tm-footer {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+}
+
+/* Panels */
+.tm-footer .uk-panel-title {
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+/* Blog
+ ========================================================================== */
+
+.tm-container-small {
+    max-width: @theme-container-small;
+    margin: auto;
+}
+
+
+.tm-container-mini {
+    max-width: @theme-container-mini;
+    margin: auto;
+}
+
+.tm-margin-top { margin-top: @theme-margin-top; }
+
+/* Tablet and bigger */
+@media (min-width: @breakpoint-medium) {
+
+   .tm-margin-top { margin-top: @theme-large-margin-top; }
+
+   .uk-article + .uk-article:before { width: @theme-container-mini; }
+
+}

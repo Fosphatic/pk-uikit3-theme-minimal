@@ -1,0 +1,22 @@
+{
+    "name": "fosphatic/uikit3-theme-minimal",
+    "type": "pagekit-theme",
+    "version": "1.0.0",
+    "title": "UIkit3 Minimal",
+    "description": "A very clean and simple theme great for blogging. Now ported to UIKit V3",
+    "license": "MIT",
+    "copyright": "(c) 2016 Pagekit",
+    "authors": [
+        {
+            "name": "Sven Suchan",
+            "email": "kontakt@suchan-webdesign.de",
+            "homepage": "https://www.suchan-webdesign.de"
+        }
+    ],
+    "extra": {
+        "image": "image.jpg"
+    },
+    "archive": {
+        "exclude": ["!/app", "!/css", "/app/assets"]
+    }
+}
