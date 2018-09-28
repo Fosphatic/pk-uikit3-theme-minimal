@@ -68,7 +68,9 @@
 
                     <?php if ($view->position()->exists('sidebar')) : ?>
                     <aside class="uk-width-1-4 <?= $params['sidebar_first'] ? 'uk-flex-first@m' : ''; ?>">
+                        <div class="uk-panel-header">
                         <?= $view->position('sidebar', 'position-panel.php') ?>
+                        </div>
                     </aside>
                     <?php endif ?>
 

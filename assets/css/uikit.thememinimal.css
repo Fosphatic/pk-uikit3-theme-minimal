@@ -1857,16 +1857,15 @@ select.uk-form-width-xsmall {
   /* 6 */
   display: inline-block;
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 0 20px;
   vertical-align: middle;
-  font-size: 0.875rem;
+  font-size: 13px;
   /* 7 */
-  line-height: 38px;
+  line-height: 40px;
   /* 8 */
   text-align: center;
   /* 9 */
   text-decoration: none;
-  text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color, border-color;
 }
@@ -1918,14 +1917,14 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-button-primary {
-  background-color: #1e87f0;
+  background-color: #000;
   color: #fff;
   border: 1px solid transparent;
 }
 /* Hover + Focus */
 .uk-button-primary:hover,
 .uk-button-primary:focus {
-  background-color: #0f7ae5;
+  background-color: #787878;
   color: #fff;
 }
 /* OnClick + Active */
@@ -2050,12 +2049,12 @@ select.uk-form-width-xsmall {
   line-height: 1.5;
   background: none;
   /* 2 */
-  color: #1e87f0;
+  color: #adadad;
 }
 /* Hover + Focus */
 .uk-button-link:hover,
 .uk-button-link:focus {
-  color: #0f6ecd;
+  color: #525252;
   text-decoration: underline;
 }
 /* Disabled */
@@ -4182,8 +4181,6 @@ ul.uk-nav-sub {
   display: block;
   /* 2 */
   color: #999;
-  font-size: 0.875rem;
-  text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color;
 }
@@ -12216,4 +12213,53 @@ iframe.uk-cover {
 }
 .uk-subnav {
     font-size: 13px !important;
+}
+.uk-article-lead {
+ color:#222222;
+ font-size:19px;
+ line-height:29px;
+ font-weight:300
+}
+.uk-article-divider {
+ margin-bottom:35px;
+ border-color:#e9e9e9
+}
+*+.uk-article-divider {
+ margin-top:35px
+}
+.uk-article+.uk-article {
+ position:relative
+}
+.uk-article+.uk-article:before {
+ content:"";
+ position:absolute;
+ top:0;
+ left:0;
+ right:0;
+ width:100%;
+ margin:-50px auto 0 auto;
+ border-top:1px solid #e9e9e9
+}
+@media (min-width:768px) {
+ .uk-article+.uk-article {
+  margin-top:160px;
+ }
+ .uk-article+.uk-article:before {
+  margin-top:-80px
+ }
+ .uk-article-title {
+  font-size:42px;
+  line-height:42px
+ }
+}
+@media (min-width:768px) {
+ .tm-margin-top {
+  margin-top:50px;
+ }
+ .uk-article+.uk-article:before {
+  width:600px
+ }
+}
+.uk-panel.uk-panel-header {
+    margin-top: 40px;
 }

@@ -46,7 +46,7 @@
 ?>
 
 <?php if ($total > 1) : ?>
-<ul class="uk-pagination uk-margin-large-top">
+<ul class="uk-pagination uk-flex-center uk-margin-large-top" uk-margin>
 
 
     <?php for($i=1;$i<=$total;$i++): ?>
@@ -57,7 +57,7 @@
             <?php else: ?>
             <li>
                 <a href="<?= $view->url('@blog/page', ['page' => $i]) ?>"><?=$i?></a>
-            <li>
+            </li>
             <?php endif; ?>
 
         <?php elseif($i==1): ?>
