@@ -1,15 +1,10 @@
 # Changelog
 
-## 1.0.2 (June 30, 2016)
-
-### Removed
-- Removed system messages
-
-## 1.0.1 (April 13, 2016)
+## 1.0.1 (September 28, 2018)
 
 ### Fixed
-- Fixed article divider
+- Fixed offcanvas menu
 
-## 1.0.0 (April 7, 2016)
+## 1.0.0 (September 28, 2018)
 
 - Initial release
