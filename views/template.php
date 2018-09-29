@@ -49,7 +49,7 @@
         <div id="tm-login" class="tm-login uk-block <?= $params['login_style'] ?>">
             <div class="uk-container uk-container-center">
 
-                <section class="uk-width-1-2@m uk-width-1-3@l" data-uk-grid-margin>
+                <section class="uk-grid-match" data-uk-gird data-uk-grid-margin>
                     <?= $view->position('login', 'position-grid.php') ?>
                 </section>
 

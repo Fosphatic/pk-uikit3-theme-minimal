@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.5 (September 29, 2018)
+
+### Fix
+- Login Widget fixed styling as horizontal align
+
 ## 1.0.4 (September 29, 2018)
 
 ### Add

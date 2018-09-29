@@ -1,4 +1,5 @@
 <?php if ($user->isAuthenticated()): ?>
+<div class="uk-containter uk-text-center">
 
 <?= __('Hi %username%', ['%username%' => $user->username]) ?><br>
 <a href="<?= $view->url('@user/logout', ['redirect' => $redirect]) ?>"><?= __('Logout') ?></a>
@@ -31,5 +32,6 @@
     <?php $view->token()->get() ?>
 
 </form>
+</div>
 
 <?php endif; ?>
