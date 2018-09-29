@@ -45,11 +45,23 @@
         </div>
         <?php endif ?>
 
+        <?php if ($view->position()->exists('login')) : ?>
+        <div id="tm-login" class="tm-login uk-block <?= $params['login_style'] ?>">
+            <div class="uk-container uk-container-center">
+
+                <section class="uk-width-1-2@m uk-width-1-3@l" data-uk-grid-margin>
+                    <?= $view->position('login', 'position-grid.php') ?>
+                </section>
+
+            </div>
+        </div>
+        <?php endif; ?>
+
         <?php if ($view->position()->exists('top')) : ?>
         <div id="tm-top" class="tm-top uk-block <?= $params['top_style'] ?>">
             <div class="uk-container uk-container-center">
 
-                <section class="uk-grid uk-grid-match" data-uk-grid-margin>
+                <section class="uk-grid-match" data-uk-grid data-uk-grid-margin>
                     <?= $view->position('top', 'position-grid.php') ?>
                 </section>
 

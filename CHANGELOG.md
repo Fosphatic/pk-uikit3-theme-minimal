@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.4 (September 29, 2018)
+
+### Add
+- Login, registration forms etc. added override with uikit 3 correct styling
+- Added some colors to forms in css to have more minimal theme like experience
+
 ## 1.0.3 (September 28, 2018)
 
 ### Fix

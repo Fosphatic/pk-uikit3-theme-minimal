@@ -32,6 +32,7 @@ return [
     'positions' => [
 
         'navbar' => 'Navbar',
+        'login' => 'Login',
         'top' => 'Top',
         'sidebar' => 'Sidebar',
         'bottom' => 'Bottom',
@@ -50,6 +51,7 @@ return [
         'alignment' => '',
         'html_class' => '',
         'sidebar_first' => false,
+        'login_style' => 'uk-block-muted',
         'top_style' => 'uk-block-muted',
         'main_style' => 'uk-block-default',
         'bottom_style' => 'uk-block-muted',

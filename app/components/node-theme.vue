@@ -40,6 +40,17 @@
         </div>
 
         <div class="uk-form-row">
+            <label for="form-top-style" class="uk-form-label">Login {{ 'Position' | trans }}</label>
+            <div class="uk-form-controls">
+                <select id="form-login-style" class="uk-form-width-large" v-model="node.theme.login_style">
+                    <option value="uk-block-default">{{ 'Default' | trans }}</option>
+                    <option value="uk-block-muted">{{ 'Muted' | trans }}</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="uk-form-row">
             <label for="form-top-style" class="uk-form-label">Top {{ 'Position' | trans }}</label>
             <div class="uk-form-controls">
                 <select id="form-top-style" class="uk-form-width-large" v-model="node.theme.top_style">

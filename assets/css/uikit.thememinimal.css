@@ -1443,7 +1443,7 @@ button.uk-icon:not(:disabled) {
   outline: none;
   background-color: #fff;
   color: #666;
-  border-color: #1e87f0;
+  border-color: #525252;
 }
 /* Disabled */
 .uk-input:disabled,
@@ -1451,7 +1451,7 @@ button.uk-icon:not(:disabled) {
 .uk-textarea:disabled {
   background-color: #f8f8f8;
   color: #999;
-  border-color: #e5e5e5;
+  border-color: #525252;
 }
 /*
  * Placeholder
@@ -1621,7 +1621,7 @@ select.uk-form-width-xsmall {
 .uk-radio:focus,
 .uk-checkbox:focus {
   outline: none;
-  border-color: #1e87f0;
+  border-color: #525252;
 }
 /*
  * Checked
@@ -1629,14 +1629,14 @@ select.uk-form-width-xsmall {
 .uk-radio:checked,
 .uk-checkbox:checked,
 .uk-checkbox:indeterminate {
-  background-color: #1e87f0;
+  background-color: #000;
   border-color: transparent;
 }
 /* Focus */
 .uk-radio:checked:focus,
 .uk-checkbox:checked:focus,
 .uk-checkbox:indeterminate:focus {
-  background-color: #0e6dcd;
+  background-color: #000;
 }
 /*
  * Icons
@@ -1656,7 +1656,7 @@ select.uk-form-width-xsmall {
 .uk-radio:disabled,
 .uk-checkbox:disabled {
   background-color: #f8f8f8;
-  border-color: #e5e5e5;
+  border-color: #525252;
 }
 .uk-radio:disabled:checked {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23999%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
@@ -1930,7 +1930,7 @@ select.uk-form-width-xsmall {
 /* OnClick + Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #0e6dcd;
+  background-color: #000;
   color: #fff;
 }
 /*
@@ -12179,11 +12179,10 @@ iframe.uk-cover {
     position: relative;
     box-sizing: border-box;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 .uk-block {
     padding-top: 100px;
-    padding-bottom: 100px;
 }
 .tm-footer {
     padding-top: 80px;
@@ -12271,4 +12270,7 @@ iframe.uk-cover {
 .uk-article-title {
     font-size: 42px;
     line-height: 42px;
+}
+.uk-container-xxsmall {
+    max-width: 400px;
 }
