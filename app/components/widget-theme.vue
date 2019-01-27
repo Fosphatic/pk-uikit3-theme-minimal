@@ -42,10 +42,10 @@
             <div class="uk-form-controls">
                 <select id="form-theme-panel" class="uk-form-width-large" v-model="widget.theme.panel">
                     <option value="">{{ 'None' | json }}</option>
-                    <option value="uk-panel-box">{{ 'Box' | trans }}</option>
-                    <option value="uk-panel-box uk-panel-box-primary uk-contrast">{{ 'Box Primary' | trans }}</option>
-                    <option value="uk-panel-box uk-panel-box-secondary">{{ 'Box Secondary' | trans }}</option>
-                    <option value="uk-panel-header">{{ 'Header' | trans }}</option>
+                    <option value="uk-background-default uk-dark uk-padding uk-text-emphasis">{{ 'Panel' | trans }}</option>
+                    <option value="uk-background-primary uk-light uk-padding">{{ 'Panel Primary' | trans }}</option>
+                    <option value="uk-background-secondary uk-light uk-padding">{{ 'Panel Secondary' | trans }}</option>
+                    <option value="uk-background-muted uk-dark uk-padding uk-text-emphasis">{{ 'Panel Muted' | trans }}</option>
                 </select>
             </div>
         </div>

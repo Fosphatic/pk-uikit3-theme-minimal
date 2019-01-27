@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.6 (January 27, 2018)
+
+### Changes
+- Uikit 3.0.2 included now
+- Settings for site and widget are reworked and should apply now especialy the section and panel settings
+
 ## 1.0.5 (September 29, 2018)
 
 ### Fix
