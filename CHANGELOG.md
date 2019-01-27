@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.7 (January 27, 2018)
+
+### Bugfix
+- Sidebar behaviour on small screen
+
 ## 1.0.6 (January 27, 2018)
 
 ### Changes
